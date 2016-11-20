@@ -1,0 +1,367 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #000;
+}
+
+@font-face {
+    font-family: WeLovePixele;
+    src: url("../fonts/Pixel-UniCode.eot") /* IE */
+}
+
+@font-face {
+    font-family: WeLovePixelt;
+    src: url("../fonts/Pixel-UniCode.ttf") /* CSS */
+}
+
+.main {
+    margin: auto;
+    width: 1280px;
+    height: 100%;
+}
+
+/*update*/
+.main .moonstar {
+    background: url("../images/full_stars_animation.gif");
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 2
+}
+
+/*update*/
+.main .ground {
+    background: url("../images/ground.png");
+    width: 100%;
+    height: 224px;
+}
+
+.main .left-grad {
+    background: url("../images/left-grad.png") repeat-y;
+    width: 216px;
+    height: 100%;
+    float: left;
+}
+
+.main .right-grad {
+    background: url("../images/right-grad.png") repeat-y;
+    width: 250px;
+    float: right;
+    height: 100%;
+}
+
+.main .right-grad:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*update*/
+.main .typrostokosmos {
+    width: 570px;
+    position: relative;
+    font-family: 'WeLovePixelt', 'WeLovePixele', 'Monotype Corsiva', serif;
+    font-size: 30px;
+    color: #c1c9ea;
+    cursor: default;
+    float: left;
+    margin-left: 140px;
+    text-align: center;
+    top: 44px;
+}
+
+/*update*/
+
+.ground .board {
+    background: url("../images/board.png");
+    float: left;
+    margin: -44px 0 0 362px;
+    position: relative;
+    width: 125px;
+    height: 80px;
+}
+
+.board > div {
+    background: url("../images/paperSpr.png");
+}
+
+.board .paper1 {
+    background-position: 0 0;
+    width: 52px;
+    height: 60px;
+    margin: 3px 0 0 17px;
+    cursor: pointer;
+    float: left;
+}
+
+.board .paper1:hover {
+    background-position: 73px 0;
+    margin-left: 13.5px;
+}
+
+.board .paper2 {
+    background-position: 0 57px;
+    width: 44px;
+    height: 56px;
+    margin: 7px 19px 0 -10px;
+    cursor: pointer;
+    float: right;
+}
+
+.board .paper2:hover {
+    background-position: 77px 57px;
+    margin-right: 19.5px;
+}
+
+.paper2:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.message {
+    background: url("../images/messagebg1000x640px.png");
+    width: 1000px;
+    height: 640px;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
+.message .messageBlock {
+    width: 86%;
+    margin: 80px 0 0 50px;
+    line-height: 25px;
+    font-family: 'WeLovePixelt', 'WeLovePixele', 'Monotype Corsiva', serif;
+    font-size: 30px;
+    color: #5e5a58;
+    height: 560px;
+}
+
+/** Pages **/
+
+.message [data-page='page3'],
+.message [data-page='page8'],
+.message [data-page='page9'],
+.message [data-page='page10'],
+.message [data-page='page11'],
+.message [data-page='page13'],
+.message [data-page='page15'],
+.message [data-page='page16'],
+.message [data-page='page17'],
+.message [data-page='page19'],
+.message [data-page='page20'],
+.message [data-page='page21'],
+.message [data-page='page22'],
+.message [data-page='page24'],
+.message [data-page='page25'],
+.message [data-page='page26'],
+.message [data-page='page27'],
+.message [data-page='page28'],
+.message [data-page='page29']
+{
+    line-height: 30px;
+}
+
+
+/** START Last Page */
+.message.page29 .butforw {
+    background-position: 0 -140px;
+    cursor: not-allowed;
+}
+
+.message.page29 .butforw:hover {
+    background-position: 0 -140px;
+    cursor: not-allowed;
+}
+/** END Last Page */
+
+/** START Credentials Page */
+.message.credentials .messagePanel {
+    display: none;
+}
+.message.credentials .butcom {
+    width:235px;
+    height: 66px;
+    background: url("../images/buttonsComments.png") 0 0;
+    float:left;
+    margin:12px 0 0 0px;
+    cursor: pointer;
+}
+.message.credentials .butcom:hover {
+    background-position: 0 -74px;
+}
+
+/** END Credentials Page */
+
+/** START Menu Page */
+.message.menu .butback {
+    background-position: 0 -140px;
+    cursor: not-allowed;
+}
+
+.message.menu .butback:hover {
+    background-position: 0 -140px;
+    cursor: not-allowed;
+}
+.message.menu .butmid {
+    background-position: 0 -140px;
+    cursor: not-allowed;
+}
+
+.message.menu .butmid:hover {
+    background-position: 0 -140px;
+    cursor: not-allowed;
+}
+/** END Menu Page */
+
+/** START Comments Page */
+.message.comments .butback {
+    background-position: 0 -140px;
+    cursor: not-allowed;
+}
+
+.message.comments .butback:hover {
+    background-position: 0 -140px;
+    cursor: not-allowed;
+}
+
+.message.comments .butforw {
+    background-position: 0 -140px;
+    cursor: not-allowed;
+}
+
+.message.comments .butforw:hover {
+    background-position: 0 -140px;
+    cursor: not-allowed;
+}
+
+.message.comments .butcom {
+    background-position: 0 -140px;
+    cursor: not-allowed;
+}
+
+.message.comments .butcom:hover {
+    background-position: 0 -140px;
+    cursor: not-allowed;
+}
+/** END Comments Page */
+
+.messageBlock .page {
+    display: none;
+}
+
+.messageBlock .header {
+    font-size: 35px;
+    font-weight: 900;
+    margin: 25px 0 0 0 !important;
+}
+
+.messageBlock .page > div {
+    margin: 15px 0 0 0;
+}
+
+.messageBlock a {
+    color: #3581c1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.messageBlock a:hover {
+    color: #eb5050 !important;
+}
+
+.messageBlock a:visited {
+    color: #3581c1;
+}
+
+.messagePanel {
+    background: url("../images/messagepanel900px.png");
+    width: 900px;
+    height: 88px;
+    margin: auto;
+}
+
+.messagePanel .butback {
+    width:124px;
+    height: 66px;
+    background: url("../images/leftSpr.png") 0 0;
+    float:left;
+    margin:12px 0 0 13px;
+    cursor: pointer;
+}
+.messagePanel .butback:hover {
+    background-position: 0 -74px;
+}
+.messagePanel .butmid {
+    width:124px;
+    height: 66px;
+    background: url("../images/buttonsLines.png") 0 0;
+    float:left;
+    margin:12px 0 0 125px;
+    cursor: pointer;
+}
+.messagePanel .butmid:hover {
+    background-position: 0 -74px;
+}
+
+.messagePanel .butcom {
+    width:235px;
+    height: 66px;
+    background: url("../images/buttonsComments.png") 0 0;
+    float:left;
+    margin:12px 0 0 0px;
+    cursor: pointer;
+}
+.messagePanel .butcom:hover {
+    background-position: 0 -74px;
+}
+.messagePanel .butforw {
+    width:124px;
+    height: 66px;
+    background: url("../images/rightSpr.png") 0 0;
+    float: right;
+    margin:13px 13px 0 0;
+    cursor: pointer;
+}
+.messagePanel .butforw:hover {
+    background-position: 0 -74px;
+}
+
+.messagePanel:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.moonstar .moonanimation {
+    float: left;
+    margin: 2.5% 0 0 30%;
+    width: 68px;
+    height: 108px;
+}
+
+.moonstar .moonanimation .ani {
+    width: 68px;
+    height: 108px;
+}
+
+.rabbit {
+    width: 324px;
+    height: 48px;
+    float: right;
+    margin-right: -228px;
+}
+
+#disqus_thread {
+    display: block;
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+}
