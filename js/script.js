@@ -16,6 +16,7 @@ var pages = [
     'page9',
     'page10',
     'page11',
+    'page12',
     'page13',
     'page14',
     'page15',
